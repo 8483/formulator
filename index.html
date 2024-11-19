@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <script src="formulator.js"></script>
+
+        <script>
+            let form = new Formulator({
+                location: "body",
+                fields: [{ type: "input", key: "foo", label: "Поле", value: "aaa", styleLabel: "color: red;", styleInput: "background: red;" }],
+            });
+
+            form.init();
+            console.log(form.getValues());
+        </script>
+    </head>
+    <body></body>
+</html>
